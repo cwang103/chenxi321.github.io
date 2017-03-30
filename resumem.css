@@ -1,0 +1,266 @@
+
+body {
+	font-size: 0.8rem;
+}
+.contactme {
+	text-align: center;
+	width: 100px;
+	height: 30px;
+	/*margin-top: 1450px;
+	margin-left: 100px;
+	padding: 70px 0;*/
+}
+
+.contactme #hide {
+	display: none;
+}
+
+.contactme:hover #show {
+	display: none;
+}
+
+.contactme:hover #hide {
+	display: inline;
+}
+
+
+.l5,.l6,.l7,.l8 {
+	background: transparent;
+	width: 0px;
+	height: 0px;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+}
+.l5 {
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 2px;
+  -webkit-animation-name: l5;
+
+}
+
+.l6 {
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  -webkit-animation-name: l6;
+  
+}
+
+.l7 {
+  right: 0;
+  top: 0;
+  height: 100px;
+  width: 2px;
+  -webkit-animation-name: l7;
+ 
+}
+
+.l8 {
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 2px;
+  -webkit-animation-name: l8;
+  
+}
+@keyframes l5 {
+  0%    { height: 0; background: #000; }
+  100%  { height: 100px; background: #000; }
+}
+
+@keyframes l6 {
+  0%    { width: 0; background: #000; }
+  100%  { width: 100px; background: #000; }
+}
+
+@keyframes l7 {
+  0%    { height: 0; background: #000; }
+  100%  { height: 100px; background: #000; }
+}
+
+@keyframes l8 {
+  0%    { width: 0; background: #000; }
+  100%  { width: 100px; background: #000; }
+}
+
+
+a {
+	text-decoration: none;
+}
+
+#show { 
+	background-color: #212322;
+	color: #fcfcfc;
+	font-size: 1.1rem;
+	font-family: sans-serif;
+    text-decoration: none;
+}
+
+#hide {
+	text-decoration: none;
+	font-size: 1.1rem;
+	word-spacing: 5px;
+	color: #212322;
+}
+
+img {
+	width: 60%;
+	/*height: auto;*/
+}
+
+body {
+	background: url(https://image.freepik.com/free-vector/wrinkled-paper-texture_1100-12.jpg);
+}
+
+
+
+#intro {
+	
+	border-style: solid;
+	border-color: #212322;
+}
+
+h1 {
+	/*width: 500px;
+	height:66px;*/
+	background-color: #fcfcfc;
+	text-align: center;
+	float: right;
+	/*margin-left: 600px;*/
+	margin-top: 0px;
+	padding-top: 28px;
+	animation-name: chenxi;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	color: #212322;
+}
+
+@keyframes chenxi { 
+	from {background-color: #fcfcfc; color:#212322; }
+	to {background-color: #212322; color: #fcfcfc; }
+}
+
+
+#experience {
+	border-style: dashed;
+	border-color: #212322;
+	margin-top: 10px;
+}
+
+#achievement {
+	border-style: dashed;
+	border-color: #212322;
+	margin-top: 10px;
+}
+
+#volunteer {
+	border-style: dashed;
+	border-color: #212322;
+	margin-top: 10px;
+}
+
+#skills {
+	border-style: dashed;
+	border-color: #212322;
+	margin-top: 10px;
+}
+
+.date {
+	float: right;
+}
+
+nav ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+}
+
+ol li {
+	float: left;
+}
+
+ol li a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration:none;
+}
+
+ol li a:hover  {
+	background-color: #111;
+}
+
+
+
+p,li {
+	font-family: Courier;
+}
+
+h2,p,li,header {
+	padding-left: 10px;
+}
+
+@media print {
+	#intro,#experience,#achievement,#volunteer,#skills {
+		border-style: none;
+	}
+	#china,#us {
+		display: none;
+	}
+	#achievement{
+		margin-top: -280px;
+		
+		width: 500px;
+	}
+	#volunteer{
+
+		margin-top: -180px;
+	}
+	#skills{
+		width: 500px;
+		margin-left: 0px;
+		text-align: left;
+		margin-top: -80px;
+	}
+	#skills header {
+		text-align: left;
+	}
+	.contactme {
+		display: none;
+	}
+	#y4 {
+		margin-top: -260px;
+	}
+	#y5 {
+		margin-top: -180px;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+	#us {
+		float: right;
+		margin-top: -150px;
+	}
+	body {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (min-width: 1020px) {
+	body {
+		font-size: 1.2rem;
+	}
+}
